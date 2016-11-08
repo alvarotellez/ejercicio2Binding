@@ -12,5 +12,13 @@ namespace BindingEj2Elementos.ViewModels
     {
         private clsPersona _personaSeleccionada;
         private ObservableCollection<clsPersona> listaPersonas;
+
+        public clsMainPageVM()
+        {
+            clsListado oListado = new clsListado();
+            
+        }
     }
+
+
 }
