@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BindingEj2Elementos.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,13 @@ namespace BindingEj2Elementos
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private List<clsPersona> listadoPersonas;
         public MainPage()
         {
             this.InitializeComponent();
+
+            
         }
+
     }
 }
