@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,9 +9,9 @@ namespace BindingEj2Elementos.Models
 {
     public class clsListado
     {
-        public List<clsPersona> getListado()
+        public ObservableCollection<clsPersona> getListado()
         {
-            List<clsPersona> miLista = new List<clsPersona>();
+            ObservableCollection<clsPersona> miLista = new ObservableCollection<clsPersona>();
 
             miLista.Add(new clsPersona(1, "Jose Antonio", "Fernandez", null, "IES nervion", "656392054"));
             miLista.Add(new clsPersona(2, "David", "Fernandez", null, "IES nervion", "65644654"));

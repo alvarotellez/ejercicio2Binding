@@ -16,7 +16,7 @@ namespace BindingEj2Elementos.ViewModels
         public clsMainPageVM()
         {
             clsListado oListado = new clsListado();
-            
+            listaPersonas = oListado.getListado();
         }
     }
 
