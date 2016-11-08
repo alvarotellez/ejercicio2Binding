@@ -11,13 +11,28 @@ namespace BindingEj2Elementos.ViewModels
     class clsMainPageVM
     {
         private clsPersona _personaSeleccionada;
-        private ObservableCollection<clsPersona> listaPersonas;
+        private ObservableCollection<clsPersona> _listaPersonas;
+
+        public clsPersona PersonaSeleccionada
+        {
+            get
+            {
+                return _personaSeleccionada;
+            }
+
+            set
+            {
+                _personaSeleccionada = value;
+            }
+        }
 
         public clsMainPageVM()
         {
             clsListado oListado = new clsListado();
-            listaPersonas = oListado.getListado();
+            _listaPersonas = oListado.getListado();
         }
+
+
     }
 
 
